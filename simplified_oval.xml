@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<definitions>
+  <definition>
+    <info>
+      <description>The cloud-init packages provide a set of init scripts for cloud instances. Cloud instances need special scripts to run during initialization to retrieve and install SSH keys, and to let the user run various scripts.
+
+Users of cloud-init are advised to upgrade to these updated packages.</description>
+      <links>
+        <cve href="https://access.redhat.com/security/cve/CVE-2019-0816" cvss3="5.4/CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"/>
+        <bugzilla href="https://bugzilla.redhat.com/1680165"/>
+      </links>
+    </info>
+    <affected_products>
+      <product>cpe:/a:redhat:enterprise_linux:8</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::appstream</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::crb</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::highavailability</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::nfv</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::realtime</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::resilientstorage</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::sap</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::sap_hana</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::supplementary</product>
+      <product>cpe:/o:redhat:enterprise_linux:8</product>
+      <product>cpe:/o:redhat:enterprise_linux:8::baseos</product>
+    </affected_products>
+    <criteria_list>
+      <criteria>(cloud-init is earlier than 0:18.5-1.el8.4 (Test ID: oval:com.redhat.rhba:tst:20191992001) AND cloud-init is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20191992002) AND (Red Hat Enterprise Linux 8 is installed (Test ID: oval:com.redhat.rhba:tst:20191992003) OR Red Hat CoreOS 4 is installed (Test ID: oval:com.redhat.rhba:tst:20191992004)))</criteria>
+    </criteria_list>
+  </definition>
+  <definition>
+    <info>
+      <description>For detailed information on changes in this release, see the Red Hat Enterprise Linux 8.1 Release Notes linked from the References section.</description>
+      <links>
+        <cve href="https://access.redhat.com/security/cve/CVE-2019-8320" cvss3="7.4/CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H"/>
+        <cve href="https://access.redhat.com/security/cve/CVE-2019-8321" cvss3="5.3/CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"/>
+        <cve href="https://access.redhat.com/security/cve/CVE-2019-8322" cvss3="5.3/CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"/>
+        <cve href="https://access.redhat.com/security/cve/CVE-2019-8323" cvss3="5.3/CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"/>
+        <cve href="https://access.redhat.com/security/cve/CVE-2019-8325" cvss3="5.3/CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"/>
+        <bugzilla href="https://bugzilla.redhat.com/1692512"/>
+      </links>
+    </info>
+    <affected_products>
+      <product>cpe:/a:redhat:enterprise_linux:8</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::appstream</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::crb</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::highavailability</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::nfv</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::realtime</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::resilientstorage</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::sap</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::sap_hana</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::supplementary</product>
+      <product>cpe:/o:redhat:enterprise_linux:8</product>
+      <product>cpe:/o:redhat:enterprise_linux:8::baseos</product>
+    </affected_products>
+    <criteria_list>
+      <criteria>((Red Hat Enterprise Linux 8 is installed (Test ID: oval:com.redhat.rhba:tst:20191992003) OR Red Hat CoreOS 4 is installed (Test ID: oval:com.redhat.rhba:tst:20191992004)) AND ((Module ruby:2.5 is enabled (Test ID: oval:com.redhat.rhba:tst:20193384065) AND ((ruby is earlier than 0:2.5.5-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384001) AND ruby is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384002)) OR (ruby-devel is earlier than 0:2.5.5-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384003) AND ruby-devel is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384004)) OR (ruby-doc is earlier than 0:2.5.5-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384005) AND ruby-doc is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384006)) OR (ruby-irb is earlier than 0:2.5.5-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384007) AND ruby-irb is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384008)) OR (ruby-libs is earlier than 0:2.5.5-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384009) AND ruby-libs is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384010)) OR (rubygem-abrt is earlier than 0:0.3.0-4.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384011) AND rubygem-abrt is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384012)) OR (rubygem-abrt-doc is earlier than 0:0.3.0-4.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384013) AND rubygem-abrt-doc is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384014)) OR (rubygem-bigdecimal is earlier than 0:1.3.4-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384015) AND rubygem-bigdecimal is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384016)) OR (rubygem-bson is earlier than 0:4.3.0-2.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384017) AND rubygem-bson is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384018)) OR (rubygem-bson-doc is earlier than 0:4.3.0-2.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384019) AND rubygem-bson-doc is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384020)) OR (rubygem-bundler is earlier than 0:1.16.1-3.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384021) AND rubygem-bundler is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384022)) OR (rubygem-bundler-doc is earlier than 0:1.16.1-3.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384023) AND rubygem-bundler-doc is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384024)) OR (rubygem-did_you_mean is earlier than 0:1.2.0-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384025) AND rubygem-did_you_mean is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384026)) OR (rubygem-io-console is earlier than 0:0.4.6-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384027) AND rubygem-io-console is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384028)) OR (rubygem-json is earlier than 0:2.1.0-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384029) AND rubygem-json is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384030)) OR (rubygem-minitest is earlier than 0:5.10.3-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384031) AND rubygem-minitest is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384032)) OR (rubygem-mongo is earlier than 0:2.5.1-2.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384033) AND rubygem-mongo is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384034)) OR (rubygem-mongo-doc is earlier than 0:2.5.1-2.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384035) AND rubygem-mongo-doc is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384036)) OR (rubygem-mysql2 is earlier than 0:0.4.10-4.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384037) AND rubygem-mysql2 is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384038)) OR (rubygem-mysql2-doc is earlier than 0:0.4.10-4.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384039) AND rubygem-mysql2-doc is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384040)) OR (rubygem-net-telnet is earlier than 0:0.1.1-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384041) AND rubygem-net-telnet is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384042)) OR (rubygem-openssl is earlier than 0:2.1.2-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384043) AND rubygem-openssl is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384044)) OR (rubygem-pg is earlier than 0:1.0.0-2.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384045) AND rubygem-pg is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384046)) OR (rubygem-pg-doc is earlier than 0:1.0.0-2.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384047) AND rubygem-pg-doc is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384048)) OR (rubygem-power_assert is earlier than 0:1.1.1-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384049) AND rubygem-power_assert is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384050)) OR (rubygem-psych is earlier than 0:3.0.2-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384051) AND rubygem-psych is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384052)) OR (rubygem-rake is earlier than 0:12.3.0-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384053) AND rubygem-rake is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384054)) OR (rubygem-rdoc is earlier than 0:6.0.1-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384055) AND rubygem-rdoc is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384056)) OR (rubygem-test-unit is earlier than 0:3.2.7-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384057) AND rubygem-test-unit is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384058)) OR (rubygem-xmlrpc is earlier than 0:0.3.0-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384059) AND rubygem-xmlrpc is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384060)) OR (rubygems is earlier than 0:2.7.6.2-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384061) AND rubygems is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384062)) OR (rubygems-devel is earlier than 0:2.7.6.2-105.module+el8.1.0+3656+f80bfa1d (Test ID: oval:com.redhat.rhba:tst:20193384063) AND rubygems-devel is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193384064))))))</criteria>
+    </criteria_list>
+  </definition>
+  <definition>
+    <info>
+      <description>For detailed information on changes in this release, see the Red Hat Enterprise Linux 8.1 Release Notes linked from the References section.</description>
+      <links>
+        <cve href="https://access.redhat.com/security/cve/CVE-2018-6616" cvss3="3.3/CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L"/>
+        <bugzilla href="https://bugzilla.redhat.com/1542321"/>
+      </links>
+    </info>
+    <affected_products>
+      <product>cpe:/a:redhat:enterprise_linux:8</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::appstream</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::crb</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::highavailability</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::nfv</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::realtime</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::resilientstorage</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::sap</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::sap_hana</product>
+      <product>cpe:/a:redhat:enterprise_linux:8::supplementary</product>
+      <product>cpe:/o:redhat:enterprise_linux:8</product>
+      <product>cpe:/o:redhat:enterprise_linux:8::baseos</product>
+    </affected_products>
+    <criteria_list>
+      <criteria>((Red Hat Enterprise Linux 8 is installed (Test ID: oval:com.redhat.rhba:tst:20191992003) OR Red Hat CoreOS 4 is installed (Test ID: oval:com.redhat.rhba:tst:20191992004)) AND ((openjpeg2 is earlier than 0:2.3.1-1.el8 (Test ID: oval:com.redhat.rhba:tst:20193408001) AND openjpeg2 is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193408002)) OR (openjpeg2-devel is earlier than 0:2.3.1-1.el8 (Test ID: oval:com.redhat.rhba:tst:20193408003) AND openjpeg2-devel is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193408004)) OR (openjpeg2-devel-docs is earlier than 0:2.3.1-1.el8 (Test ID: oval:com.redhat.rhba:tst:20193408005) AND openjpeg2-devel-docs is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193408006)) OR (openjpeg2-tools is earlier than 0:2.3.1-1.el8 (Test ID: oval:com.redhat.rhba:tst:20193408007) AND openjpeg2-tools is signed with Red Hat redhatrelease2 key (Test ID: oval:com.redhat.rhba:tst:20193408008))))</criteria>
+    </criteria_list>
+  </definition>
+</definitions>
